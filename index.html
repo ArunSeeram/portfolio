@@ -4,65 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seeram Arun Kumar - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header> 
-        <div class="container">
-            <h1>Seeram Arun Kumar</h1>
-            <p>Software Developer | UI/UX Designer | Multimedia Producer</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="navbar">
+        <h1 class="logo">Seeram Arun Kumar</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
+    <section class="hero" id="hero">
+        <div class="hero-text">
+            <h2>Hello, I'm Seeram Arun Kumar</h2>
+            <p>Creative Developer | UI/UX Enthusiast | Multimedia Specialist</p>
+            <a href="resume.pdf" class="btn-download" download>Download Resume</a>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="section-title">
             <h2>About Me</h2>
-            <p>
-                I am a passionate Computer Science student with expertise in software development, UI/UX design, and multimedia production.
-                I am skilled in tools such as Firebase, MongoDB, and Blender, and have experience working with IoT, web, and mobile app development.
-                I aim to blend technical expertise with creative design to create innovative solutions.
-            </p>
+        </div>
+        <div class="section-content">
+            <p>I'm a passionate software developer and UI/UX designer from India. I strive to create innovative solutions that bridge the gap between design and technology.</p>
         </div>
     </section>
 
-    <section id="projects" class="section">
-        <div class="container">
+    <section id="projects" class="section projects">
+        <div class="section-title">
             <h2>Projects</h2>
-
-            <div class="project">
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
                 <h3>Smart Plant Health</h3>
-                <p><strong>Technologies Used:</strong> Flutter, Firebase, TensorFlow</p>
-                <p>This app detects plant diseases and provides curing tips using machine learning and real-time data syncing with Firebase.</p>
+                <p>Technologies: Flutter, Firebase, TensorFlow</p>
+                <p>This app helps detect plant diseases and suggests remedies.</p>
+                <a href="https://github.com/yourusername/smart-plant-health" class="btn-github" target="_blank">View on GitHub</a>
             </div>
-
-            <!-- Add more project sections here -->
-            
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Technologies: ReactJS, Node.js</p>
+                <p>My second project description goes here.</p>
+                <a href="https://github.com/yourusername/project-2" class="btn-github" target="_blank">View on GitHub</a>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
+    <section id="skills" class="section skills">
+        <div class="section-title">
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">ReactJS</div>
+            <div class="skill">Flutter</div>
+            <div class="skill">Node.js</div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="section-title">
             <h2>Contact</h2>
-            <ul>
-                <li>Email: <a href="mailto:arunseeram111@gmail.com">arunseeram111@gmail.com</a></li>
-                <li>Phone: <a href="tel:+919381761706">+91 9381761706</a></li>
-                <li>LinkedIn: <a href="#" target="_blank">LinkedIn Profile</a></li>
-                <li>GitHub: <a href="#" target="_blank">GitHub Profile</a></li>
-            </ul>
+        </div>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:arunseeram111@gmail.com">arunseeram111@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919381761706">+91 9381761706</a></p>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Seeram Arun Kumar</p>
-        </div>
+        <p>&copy; 2024 Seeram Arun Kumar</p>
     </footer>
+
 </body>
 </html>
